@@ -1,4 +1,4 @@
-import { IconMapPinFilled, IconSearch } from '@tabler/icons-react'
+import { IconMapPinFilled, IconSearch, IconX } from '@tabler/icons-react'
 import * as S from './styles'
 import { useStays } from '../../hooks/useStays'
 import { AdultsCounter } from './AdultsCounter'
@@ -48,6 +48,7 @@ export const FullFilters = ({ onClick: switchFiltersSize }) => {
   return (
     <S.FullFiltersBackground>
       <S.FullFiltersBox>
+        <S.FullFiltersHeading>Edit your search<span><IconX onClick={switchFiltersSize} /></span></S.FullFiltersHeading>
         <S.FullFiltersBar>
           <S.FullInputBox>
             <S.FullInputLabel>Location</S.FullInputLabel>

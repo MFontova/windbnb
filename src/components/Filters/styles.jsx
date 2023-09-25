@@ -9,6 +9,10 @@ export const LiteFiltersBox = styled.div`
   & > * {
     cursor: pointer;
   }
+
+  @media (max-width: 768px) {
+    max-width: 90%;
+  }
 `
 
 export const FullFiltersBackground = styled.div`
@@ -30,6 +34,20 @@ export const FullFiltersBox = styled.div`
   flex-direction: column;
   padding: 90px 0;
   z-index: 999 !important;
+
+  @media (max-width: 768px) {
+    padding: 10px 0;
+  }
+`
+
+export const FullFiltersHeading = styled.p`
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 0;
+  font-size: 12px;
+  color: #333;
+  font-weight: 700;
 `
 
 export const FullFiltersBar = styled.div`
@@ -38,13 +56,22 @@ export const FullFiltersBar = styled.div`
   border-radius: 16px;
   margin: 0 100px;
   box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.10);
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 10px;
+  }
 `
 
 export const FullFiltersHelpers = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: 0 100px;
-  /* padding: 20px; */
+  
+  @media (max-width: 768px) {
+    display: flex;
+    margin: 0;
+  }
 `
 
 export const CitiesSuggestions = styled.section`
@@ -127,7 +154,10 @@ export const Input = styled.input`
   border: none;
   border-radius: 16px;
   margin-left: 0;
-  /* box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.10); */
+  
+  @media (max-width: 768px) {
+    max-width: 20%;
+  }
 `
 
 export const FullInputBox = styled.div`
@@ -170,6 +200,10 @@ export const Search = styled.span`
   justify-content: center;
   align-items: center;
   padding: 12px;
+
+  @media (max-width: 768px) {
+    padding : 8px;
+  }
 `
 
 export const SearchButton = styled.button`

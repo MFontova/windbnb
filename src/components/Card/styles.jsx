@@ -10,6 +10,12 @@ export const Card = styled.article`
     height: 269px;
     object-fit: cover;
     border-radius: 24px;
+    align-self: center;
+    width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
   }
 `
 export const DetailInfo = styled.div`
