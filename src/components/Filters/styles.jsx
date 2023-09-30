@@ -182,6 +182,7 @@ export const FullInputBox = styled.div`
 export const FullInput = styled.input`
   padding: 5px 0;
   border: none;
+  outline: none;
 
   &:hover, &:focus {
     border: none;
