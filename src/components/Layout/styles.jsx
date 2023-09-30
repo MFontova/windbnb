@@ -37,6 +37,12 @@ export const Main = styled.main`
   display: flex;
   flex-direction: column;
 
+  .title-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
   @media (max-width: 768px) {
     padding: 15px;
   }
