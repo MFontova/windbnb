@@ -41,13 +41,17 @@ export const FullFiltersBox = styled.div`
 `
 
 export const FullFiltersHeading = styled.p`
-  display: flex;
+  display: none;
   justify-content: space-between;
   padding: 20px;
   margin: 0;
   font-size: 12px;
   color: #333;
   font-weight: 700;
+
+  @media (max-width: 768px) {
+    display: flex;
+  }
 `
 
 export const FullFiltersBar = styled.div`
