@@ -1,7 +1,7 @@
 import { useContext } from 'react'
 import { useCounter } from '../../hooks/useCounter'
 import * as S from './styles'
-import { FiltersContext } from '../../context/contextFilter'
+import { FiltersContext } from '../../context/filtersContext'
 
 export const ChildrenCounter = () => {
   const { filters, setFilters } = useContext(FiltersContext)

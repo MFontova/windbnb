@@ -4,7 +4,7 @@ import { useStays } from '../../hooks/useStays'
 import { AdultsCounter } from './AdultsCounter'
 import { ChildrenCounter } from './ChildrenCounter'
 import { useContext, useState } from 'react'
-import { FiltersContext } from '../../context/contextFilter'
+import { FiltersContext } from '../../context/filtersContext'
 
 export const FullFilters = ({ onClick: switchFiltersSize }) => {
   const { stays } = useStays()

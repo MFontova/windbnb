@@ -1,4 +1,4 @@
-import { useFiltersSize } from '../../hooks/useFilters'
+import { useFiltersSize } from '../../hooks/useFiltersSize'
 import { FullFilters } from './FullFilters'
 import { LiteFilters } from './LiteFilters'
 

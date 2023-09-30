@@ -1,7 +1,7 @@
 import { IconSearch } from '@tabler/icons-react'
 import * as S from './styles'
 import { useContext } from 'react'
-import { FiltersContext } from '../../context/contextFilter'
+import { FiltersContext } from '../../context/filtersContext'
 
 export const LiteFilters = ({ onClick }) => {
   const { filters } = useContext(FiltersContext)
