@@ -160,7 +160,7 @@ export const Input = styled.input`
   margin-left: 0;
   
   @media (max-width: 768px) {
-    max-width: 20%;
+    max-width: 30%;
   }
 `
 
@@ -182,6 +182,10 @@ export const FullInputBox = styled.div`
 export const FullInput = styled.input`
   padding: 5px 0;
   border: none;
+
+  &:hover, &:focus {
+    border: none;
+  }
 `
 
 export const FullInputLabel = styled.label`
