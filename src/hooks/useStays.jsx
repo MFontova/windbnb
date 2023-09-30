@@ -3,6 +3,7 @@ import jsonStays from '../data/stays.json'
 
 export const useStays = () => {
   const [stays, setStays] = useState([])
+  const [isFetching, setIsFetching] = useState(true)
 
   async function fetchStays () {
     return jsonStays
@@ -11,8 +12,9 @@ export const useStays = () => {
   useEffect(() => {
     fetchStays().then((stays) => {
       setStays(jsonStays)
+      setIsFetching(false)
     })
   }, [])
 
-  return { stays }
+  return { stays, isFetching }
 }

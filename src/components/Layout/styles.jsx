@@ -43,6 +43,26 @@ export const Main = styled.main`
     align-items: baseline;
   }
 
+  .spinner-box {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+  }
+
+  .spinner {
+    animation: spin 1s linear infinite;
+    margin: auto;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
   @media (max-width: 768px) {
     padding: 15px;
   }
